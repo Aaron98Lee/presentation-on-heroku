@@ -54,17 +54,39 @@ These are maven goals used by Back End Repositories:
 ---
 # **Project Object Model (POM)**
 - Fundamental unit of work in Maven
-- Contains information about the project 
+- Contains information about the project
 - Store configuration details
 
 ![Maven POM](https://cdn.educba.com/academy/wp-content/uploads/2020/04/Maven-POM-File-1.2.jpg)
 
 ---
-# **Parent vs Aggregator**
 
-|**Parent**|**Aggregator**|
-|--|--|
-|- **a POM which its content can be inherited** <br> - **1 project/child POM can only have 1 Parent** <br> - **child declare parantage in its POM** <br> - **Parent is unaware of child that's inheriting** <br> - **useful when parent POM consist of reusable content for another project** |- **can sequence build process of many projects** <br> - **specifies all the projects that can be build-managed together** <br> - **child POM unaware of aggregator POM** <br> - **Aggregator POM can have more than 1 child POM** <br> - **no inheritance of any content from aggregator POM** <br> - **useful for modular build & site those projects that should be managed together** |
+# **Multi-Modules Project**
+
+- Manage a group of submodules
+- Located at project's root directory
+- Submodules are regular Maven projects, can be built separately or with aggregator
+
+---
+
+# **Multi-Modules Project --> Parent**
+
+- a POM which its content can be inherited
+- 1 project/child POM can only have 1 Parent
+- child declare parantage in its POM
+- Parent is unaware of child that's inheriting
+- useful when parent POM consist of reusable content for another project
+
+---
+
+# **Multi-Modules Project --> Aggregator**
+
+- can sequence build process of many projects
+- specifies all the projects that can be build-managed together
+- child POM unaware of aggregator POM
+- Aggregator POM can have more than 1 child POM
+- no inheritance of any content from aggregator POM
+- useful for modular build & site those projects that should be managed together
 
 ---
 
